@@ -18,16 +18,11 @@ public class MahasiswaBeraksi {
 
         mahasiswa.tampilkanAtribut();
         mahasiswa.menyapa();
-        System.out.println("Usiaku \t\t\t : " +mahasiswa.hitungUsia() + " tahun");
+        System.out.println("Usiaku : " + mahasiswa.hitungUsia() + " tahun");
 
-        Mahasiswa mahasiswa2 = new Mahasiswa();
-        mahasiswa2.npm = "19630000";
-        mahasiswa2.nama = "Bisma";
-        mahasiswa2.tanggalLahir = simpleDateFormat.parse("10-09-2000");
-
+        Mahasiswa mahasiswa2 = new Mahasiswa("19630000", "Bisma", "10-09-2001");
         mahasiswa2.tampilkanAtribut();
-        mahasiswa2.menyapa();
-        System.out.println("Usiaku \t\t\t : " +mahasiswa2.hitungUsia() + " tahun");
 
     }
+
 }
